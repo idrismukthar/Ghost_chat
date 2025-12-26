@@ -72,7 +72,7 @@ wails build
 
 ---
 
-## 🛰 Connecting Across Borders (NGA  ↔ UK)
+## 🛰 Connecting Across Borders (&#x1f1f3;&#x1f1ec; NGA ↔   &#x1f1ec;&#x1f1e7;UK)
 
 * **Tailscale (Recommended):** Install on both machines and use the Tailscale IP. No router config needed.
 * **Port Forwarding:** Forward port `9999` on your router to your host PC.
