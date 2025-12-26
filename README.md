@@ -1,10 +1,9 @@
-
 # <p align="center">👻 GHOST_CHAT V2</p>
 
 <p align="center">
-<img src="[https://img.shields.io/badge/Status-Live-success?style=for-the-badge&logo=statuspage](https://www.google.com/search?q=https://img.shields.io/badge/Status-Live-success%3Fstyle%3Dfor-the-badge%26logo%3Dstatuspage)" alt="Status">
-<img src="[https://img.shields.io/badge/Security-AES--256--CFB-red?style=for-the-badge&logo=go-guardian](https://www.google.com/search?q=https://img.shields.io/badge/Security-AES--256--CFB-red%3Fstyle%3Dfor-the-badge%26logo%3Dgo-guardian)" alt="Security">
-<img src="[https://img.shields.io/badge/Network-P2P-orange?style=for-the-badge&logo=p2p](https://www.google.com/search?q=https://img.shields.io/badge/Network-P2P-orange%3Fstyle%3Dfor-the-badge%26logo%3Dp2p)" alt="P2P">
+<img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge&logo=statuspage" alt="Status">
+<img src="https://img.shields.io/badge/Security-AES--256--CFB-red?style=for-the-badge&logo=go-guardian" alt="Security">
+<img src="https://img.shields.io/badge/Network-P2P-orange?style=for-the-badge&logo=p2p" alt="P2P">
 </p>
 
 <p align="center">
@@ -16,11 +15,11 @@
 ## 🛠 Built With
 
 <p align="center">
-<img src="[https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Go-00ADD8%3Fstyle%3Dfor-the-badge%26logo%3Dgo%26logoColor%3Dwhite)" alt="Go">
-<img src="[https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB](https://www.google.com/search?q=https://img.shields.io/badge/React-20232A%3Fstyle%3Dfor-the-badge%26logo%3Dreact%26logoColor%3D61DAFB)" alt="React">
-<img src="[https://img.shields.io/badge/Wails-FF4500?style=for-the-badge&logo=wails&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Wails-FF4500%3Fstyle%3Dfor-the-badge%26logo%3Dwails%26logoColor%3Dwhite)" alt="Wails">
-<img src="[https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/Vite-646CFF%3Fstyle%3Dfor-the-badge%26logo%3Dvite%26logoColor%3Dwhite)" alt="Vite">
-<img src="[https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white](https://www.google.com/search?q=https://img.shields.io/badge/CSS3-1572B6%3Fstyle%3Dfor-the-badge%26logo%3Dcss3%26logoColor%3Dwhite)" alt="CSS3">
+<img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go">
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+<img src="https://img.shields.io/badge/Wails-FF4500?style=for-the-badge&logo=wails&logoColor=white" alt="Wails">
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
 </p>
 
 ---
@@ -33,7 +32,6 @@
 * 🖼 **Dynamic UI:** Upload custom wallpapers with real-time **Gaussian Blur** and **Opacity** control.
 * 🔊 **Configurable Notifications:** Custom sound alerts play only for incoming messages (senders are muted for their own sends).
 * ♻️ **Graceful Cleanup:** KILL closes listener and client connections to avoid stale sockets.
-
 
 ---
 
@@ -53,7 +51,7 @@
 
 ```bash
 # Install Wails CLI
-go install github.com/wailsapp/wails/v2/cmd/wails@latest
+go install [github.com/wailsapp/wails/v2/cmd/wails@latest](https://github.com/wailsapp/wails/v2/cmd/wails@latest)
 
 # Build the Production EXE
 wails build
@@ -63,29 +61,21 @@ wails build
 ### 2️⃣ Start a Ghost Room
 
 1. Run `GhostChat.exe`.
-2. Generate a **32-Character Key** (Share this with your partner via a secure channel). Ensure it is exactly 32 characters.
-3. Click **HOST** (if hosting on a NATed network make sure port forwarding or a tunnel is configured if remote users need to connect).
+2. Generate a **32-Character Key**. Ensure it is shared securely.
+3. Click **HOST**. (Note: Use Tailscale or Port Forwarding for remote access).
 
 ### 3️⃣ Join a Transmission
 
-1. Enter the Host's IP (Local, Tailscale, or public IP if port forwarded).
+1. Enter the Host's IP (Local, Tailscale, or public IP).
 2. Enter the secret 32-character key.
-3. Click **JOIN** and start transmitting.
-
-Tip: If you see connection failures, verify firewall/router settings or use Tailscale/ngrok for quick tests.
+3. Click **JOIN**.
 
 ---
 
-## 🛰 Connecting Across Borders (NGA ↔ UK)
+## 🛰 Connecting Across Borders (NGA  ↔ UK)
 
-A remote client can connect by using the Host's reachable IP and port (e.g., `public-ip:9999`). Common options:
-
-- **Tailscale (recommended for simplicity):** Install Tailscale on both machines and use the provided Tailscale IP — works without port forwarding.
-- **Port Forwarding (router):** Forward the chosen port (default `9999`) from your router to the host machine and open firewall rules; remote users connect to your public IP.
-- **Tunnels (ngrok/localtunnel):** Use a TCP tunnel to expose your local port temporarily without router config.
-- **VPS or VPN:** Run the host on a public server or use a VPN for reliable connectivity.
-
-Always secure the 32-character key out-of-band and avoid exposing your host on public networks without proper precautions.
+* **Tailscale (Recommended):** Install on both machines and use the Tailscale IP. No router config needed.
+* **Port Forwarding:** Forward port `9999` on your router to your host PC.
 
 ---
 
@@ -101,9 +91,7 @@ Developed with ❤️ for the Privacy Community.
 
 
 
+
+
 <b>Stay Ghost. Stay Secure.</b>
-
 </p>
-
----
-
